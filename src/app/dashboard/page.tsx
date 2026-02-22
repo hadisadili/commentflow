@@ -349,6 +349,27 @@ export default function DashboardPage() {
         </div>
       )}
 
+      {/* Extension Banner */}
+      <Link
+        href="/dashboard/extension"
+        className="flex items-center gap-4 p-4 mb-6 bg-th-card border border-blue-500/30 rounded-xl hover:border-blue-500/50 transition-colors group"
+      >
+        <div className="w-10 h-10 rounded-lg bg-blue-600/10 flex items-center justify-center shrink-0">
+          <svg className="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+          </svg>
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-sm font-semibold text-th-text">Get the CommentFlow Extension</h3>
+          <p className="text-xs text-th-text-secondary mt-0.5">
+            Install our browser extension to auto-post comments. Includes setup guide for Chrome, Edge, Firefox &amp; more.
+          </p>
+        </div>
+        <svg className="w-5 h-5 text-th-text-muted group-hover:text-blue-400 transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </Link>
+
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div>
