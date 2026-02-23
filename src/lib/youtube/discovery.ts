@@ -85,9 +85,3 @@ export function calculateYouTubeRelevance(
   const maxPossible = keywords.length * 4 + 2;
   return Math.min(score / maxPossible, 1);
 }
-
-function getThirtyDaysAgo(): string {
-  const d = new Date();
-  d.setDate(d.getDate() - 30);
-  return d.toISOString();
-}
